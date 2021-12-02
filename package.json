@@ -4,7 +4,8 @@
   "description": "Phones catalogue api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -12,5 +13,8 @@
   },
   "author": "Irene Mateo Herrero",
   "license": "MIT",
-  "homepage": "https://github.com/irenemherrero/phones-catalogue-back#readme"
+  "homepage": "https://github.com/irenemherrero/phones-catalogue-back#readme",
+  "devDependencies": {
+    "husky": "^7.0.0"
+  }
 }
