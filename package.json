@@ -1,0 +1,16 @@
+{
+  "name": "phones-catalogue-back",
+  "version": "1.0.0",
+  "description": "Phones catalogue api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irenemherrero/phones-catalogue-back.git"
+  },
+  "author": "Irene Mateo Herrero",
+  "license": "MIT",
+  "homepage": "https://github.com/irenemherrero/phones-catalogue-back#readme"
+}
