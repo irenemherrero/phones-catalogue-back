@@ -1,0 +1,45 @@
+GET http://localhost:3000/phones
+
+###
+POST http://localhost:3000/phones HTTP/1.1
+content-Type: application/json
+
+
+{
+"id": 33,
+"name": "iPonyyyyyyyyy 007",
+"manufacturer": "Apple",
+"description": "lorem ipsum dolor sit amet consectetur.",
+"color": "black",
+"price": 769,
+"imageFileName": "//m.media-amazon.com/images/I/61+fbdrjtCL._AC_SY355_.jpg",
+"screen": "4,7 inch IPS",
+"processor": "A10 Fusion",
+"ram": 2
+}
+
+###
+GET http://localhost:3000/phones/<mongodb_id>
+
+###
+
+DELETE http://localhost:3000/phones/<mongodb_id>
+
+###
+PUT http://localhost:3000/phones/<mongodb_id> HTTP/1.1
+content-Type: application/json
+
+
+{
+"id": 33,
+"name": "iPonyyyyyyyy 007",
+"manufacturer": "banana",
+"description": "Gatos maullan con la lata de atún",
+"color": "white",
+"price": 500,
+"imageFileName": "//m.media-amazon.com/images/I/61+fbdrjtCL._AC_SY355_.jpg",
+"screen": "4,7 inch IPS",
+"processor": "A10 Fusion",
+"ram": 2
+}
+ 
