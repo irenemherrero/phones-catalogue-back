@@ -2,17 +2,23 @@ name: Deploy to Heroku
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, add-testing-in-pipeline ]
 
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: Build, Push and Release a Docker container to Heroku. # Your custom step name
+    - name: Set up Node.js version 16
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+    - run: npm ci
+    - run: npm run lint
+    - run: npm run test
+    - name: Build, Push and Release a Docker container to Heroku.
       uses: gonuit/heroku-docker-deploy@v1.3.3
       with:
           email: ${{ secrets.HEROKU_EMAIL }}
