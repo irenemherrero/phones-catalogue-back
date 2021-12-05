@@ -9,6 +9,6 @@
         "ecmaVersion": 2020
     },
     "rules": {
-        "quotes": ["error", "double"]
+        "quotes": ["error", "single"]
     }
 }

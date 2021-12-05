@@ -3,7 +3,7 @@ const {
   MONGO_PASSWORD,
   MONGO_HOSTNAME,
   MONGO_DB
-} = process.env;
+} = process.env
 
 module.exports = {
   PORT: process.env.PORT || 3000,

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const PhoneSchema = {
   id: {
@@ -44,6 +44,6 @@ const PhoneSchema = {
   }
 }
 
-const Phone = mongoose.model('Phone', PhoneSchema);
+const Phone = mongoose.model('Phone', PhoneSchema)
 
-module.exports = Phone; 
+module.exports = Phone
