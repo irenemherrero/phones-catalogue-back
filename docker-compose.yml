@@ -1,0 +1,32 @@
+version: '3'
+
+services: 
+  api:
+    container_name: phones-api
+    restart: always
+    env_file: .env
+    environment:
+      - MONGO_USERNAME=$MONGO_USERNAME
+      - MONGO_PASSWORD=$MONGO_PASSWORD
+      - MONGO_HOSTNAME=$MONGO_HOSTNAME
+      - MONGO_DB=$MONGO_DB
+    build: .
+    ports: 
+      - "3000:3000"
+    links:
+      - database
+
+  database: 
+    container_name: mongodb
+    image: mongo:5.0.3
+    env_file: .env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_PASSWORD
+    volumes: 
+      - ./mongo_data:/data/db
+
+    ports:
+      - 27017:27017
+    logging:
+      driver: none
