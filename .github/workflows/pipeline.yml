@@ -2,7 +2,7 @@ name: Deploy to Heroku
 
 on:
   push:
-    branches: [ main, pipeline-tests ]
+    branches: [ main ]
 
 jobs:
 
