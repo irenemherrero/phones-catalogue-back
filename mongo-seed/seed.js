@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Phone = require('../app/models/Phone')
 const mockPhones = require('./seed-phones')
 const mongoose = require('mongoose');
