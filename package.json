@@ -10,7 +10,9 @@
     "seed": "node mongo-seed/seed.js",
     "lint": "eslint *.js .",
     "lint:fix": "eslint --fix --ext .js .",
-    "test": "jest"
+    "test": "jest",
+    "infra:up": "docker compose -f docker/test/docker-compose.yml up -d",
+    "infra:down": "docker compose -f docker/test/docker-compose.yml down"
   },
   "repository": {
     "type": "git",

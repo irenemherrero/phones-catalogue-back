@@ -1,15 +1,12 @@
-version: '3'
+version: "3"
 
 services: 
   api:
     container_name: phones-api
     restart: always
     env_file: .env
-    environment:
-      - MONGO_USERNAME=$MONGO_USERNAME
-      - MONGO_PASSWORD=$MONGO_PASSWORD
-      - MONGO_HOSTNAME=$MONGO_HOSTNAME
-      - MONGO_DB=$MONGO_DB
+    environment: 
+      DB: $MONGO_DB_STRING
     build: .
     ports: 
       - "3000:3000"
@@ -27,6 +24,6 @@ services:
       - ./mongo_data:/data/db
 
     ports:
-      - 27017:27017
+      - 3001:3001
     logging:
-      driver: none
+      driver: none 
