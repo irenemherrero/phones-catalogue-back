@@ -6,7 +6,7 @@ services:
     restart: always
     env_file: .env
     environment: 
-      DB: $MONGO_DB_STRING
+      - DB=$MONGO_DB_STRING
     build: .
     ports: 
       - "3000:3000"
