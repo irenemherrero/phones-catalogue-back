@@ -1,7 +1,7 @@
-GET http://localhost:3000/phones
+GET http://localhost:3002/phones
 
 ###
-POST http://localhost:3000/phones HTTP/1.1
+POST http://localhost:3002/phones HTTP/1.1
 content-Type: application/json
 
 
@@ -19,14 +19,14 @@ content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/phones/<mongodb_id>
+GET http://localhost:3002/phones/<mongodb_id>
 
 ###
 
-DELETE http://localhost:3000/phones/<mongodb_id>
+DELETE http://localhost:3002/phones/<mongodb_id>
 
 ###
-PUT http://localhost:3000/phones/<mongodb_id> HTTP/1.1
+PUT http://localhost:3002/phones/<mongodb_id> HTTP/1.1
 content-Type: application/json
 
 
