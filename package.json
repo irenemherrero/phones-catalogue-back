@@ -15,7 +15,6 @@
     "infra:up": "docker compose -f docker/test/docker-compose.yml up -d",
     "infra:down": "docker compose -f docker/test/docker-compose.yml down",
     "docker:build": "docker-compose build",
-    "docker:seed": "docker build ./mongo-seed",
     "docker:up": "docker-compose up",
     "docker:down": "docker-compose down"
   },

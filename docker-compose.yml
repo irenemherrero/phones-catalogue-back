@@ -27,12 +27,3 @@ services:
       - 3001:3001
     logging:
       driver: none
-
-  mongo-seed:
-    build: 
-      context: ./mongo-seed
-      dockerfile: ./Dockerfile
-      args:
-        - MONGO_HOSTNAME=$MONGO_HOSTNAME
-    links:
-      - database
