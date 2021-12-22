@@ -1,6 +1,6 @@
 require('dotenv').config()
 const Phone = require('../app/models/Phone')
-const mockPhones = require('./seed-phones')
+const mockPhones = require('./seed-phones.json')
 const mongoose = require('mongoose')
 const { connect } = require('../app/config/database')
 
